@@ -8,3 +8,6 @@ route add -net 172.17.0.0/16  192.168.56.101
 # ACCESSING JBOSS EAP
 http://172.17.0.13:8080
 http://172.17.0.13:9990/console
+
+# UPDATE GIT
+git push -u origin master
