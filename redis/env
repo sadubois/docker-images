@@ -1,0 +1,8 @@
+export REDIS_MASTER=`docker inspect --format='{{.NetworkSettings.IPAddress}}' redis-master`
+export REDIS_SLAVE_01=`docker inspect --format='{{.NetworkSettings.IPAddress}}' redis-slave-01`
+export REDIS_SLAVE_02=`docker inspect --format='{{.NetworkSettings.IPAddress}}' redis-slave-02`
+
+echo "# REDIS_MASTER ....: $REDIS_MASTER"
+echo "# REDIS_SLAVE_01 ..: $REDIS_SLAVE_01"
+echo "# REDIS_SLAVE_02 ..: $REDIS_SLAVE_02"
+

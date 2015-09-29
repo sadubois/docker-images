@@ -8,5 +8,5 @@ RUN buildDeps='gcc-c++ libc6-dev tar git unzip wget libevent clang libstdc++-sta
     baseDeps='make gcc curl libffi-devel'; \
     set -x \
     && sed -i 's/bind 127.0.0.1/#bind 127.0.0.1/g' /etc/redis.conf \
-    && echo "slaveof 172.17.0.80 6379" >>/etc/redis.conf 
+    && echo "slaveof 172.17.0.30 6379" >>/etc/redis.conf 
 

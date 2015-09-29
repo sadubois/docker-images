@@ -11,3 +11,5 @@ http://172.17.0.13:9990/console
 
 # UPDATE GIT
 git push -u origin master
+
+REDIS_SERVER=`docker inspect --format='{{.NetworkSettings.IPAddress}}' jboss/jboss-eap`
